@@ -36,5 +36,6 @@ function loadingAnimation() {
         stagger: 0.3,
 
     })
+
 }
 loadingAnimation()

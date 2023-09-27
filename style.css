@@ -62,3 +62,19 @@ body {
     opacity: 0;
     transform: scale(0);
 }
+
+#page2 {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 1vw;
+}
+
+#page2 .elem {
+    height: 100%;
+    width: 30%;
+    background-color: red;
+}

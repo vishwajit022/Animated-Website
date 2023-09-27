@@ -20,7 +20,6 @@ body {
     min-height: 100vh;
     position: relative;
     width: 100%;
-    background-color: aqua;
     padding: 0 1vw;
 }
 
@@ -34,7 +33,7 @@ body {
     text-transform: uppercase;
     font-family: futura;
     /* Make sure "futura" is defined in your font stack */
-    letter-spacing: -9px;
+    letter-spacing: -5px;
 }
 
 #video-container {
@@ -51,12 +50,12 @@ body {
 
 #video-container #play {
     padding: 3vw 2.2vw;
-    background-color: black;
     color: #fff;
     font-size: 1.3vw;
     position: fixed;
     text-transform: uppercase;
     font-family: futura;
+    background-color: black;
     /* Make sure "futura" is defined in your font stack */
     border-radius: 50%;
     opacity: 0;
@@ -66,7 +65,6 @@ body {
 #page2 {
     height: 100vh;
     width: 100%;
-    background-color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -76,5 +74,104 @@ body {
 #page2 .elem {
     height: 100%;
     width: 30%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page2 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page3 {
+    height: 100vh;
+    width: 100%;
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.details {
+    position: absolute;
+    height: 50px;
+    width: 80%;
+    background-color: rgb(149, 23, 134);
+    border-radius: 20px;
+}
+
+.details:hover {
+    height: 200px;
+}
+
+.child {
+    height: 54vh;
+    width: 40vw;
     background-color: red;
+    border: 2px solid;
+}
+
+@media(max-width:600px) {
+    #page1 {
+        min-height: 40%;
+        width: 100%;
+        padding: 0 3vw;
+    }
+    #page1 h1 {
+        font-size: 10vw;
+        line-height: 9vw;
+        letter-spacing: -1px;
+    }
+    #video-container video {
+        height: 25vh;
+        width: 100%;
+        object-fit: cover;
+        margin-top: 3vw;
+    }
+    #video-container #play {
+        padding: 9vw 6.2vw;
+        color: #fff;
+        font-size: 6vw;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        text-transform: uppercase;
+        font-family: futura;
+        background-color: black;
+        border-radius: 50%;
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+    #page2 {
+        height: 70vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5vw 3vw;
+    }
+    #page2 .elem {
+        height: 100vh;
+        width: 100%;
+        background-color: rgb(236, 234, 234);
+        margin-bottom: 3vw;
+    }
+    #page2 img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    #page3 {
+        height: 100vh;
+        width: 100%;
+        background-color: aliceblue;
+    }
+    .details:hover {
+        height: 200px;
+    }
 }

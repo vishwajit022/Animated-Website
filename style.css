@@ -111,8 +111,23 @@ body {
 .child {
     height: 54vh;
     width: 40vw;
-    background-color: red;
-    border: 2px solid;
+    position: relative;
+    background-color: aliceblue;
+    align-items: center;
+}
+
+.child img {
+    padding: 10%;
+    object-fit: cover;
+}
+
+#cursor {
+    height: 150px;
+    width: 150px;
+    background-color: blanchedalmond;
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
 }
 
 @media(max-width:600px) {
